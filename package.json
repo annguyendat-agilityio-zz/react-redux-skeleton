@@ -1,6 +1,6 @@
 {
 	"name": "react-redux-skeleton",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
 	"main": "index.jsx",
 	"scripts": {
@@ -10,9 +10,10 @@
 	},
 	"repository" : { 
 		"type" : "git",
-		"url" : "https://github.com/annguyen-asnet/react-redux-structore.git"
+		"url" : "https://github.com/annguyen-asnet/react-redux-skeleton.git"
 	},
 	"keywords": [
+		"yeoman-generator",
 		"react",
 		"redux",
 		"skeleton"
