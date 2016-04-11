@@ -12,6 +12,11 @@
 		"type" : "git",
 		"url" : "https://github.com/annguyen-asnet/react-redux-structore.git"
 	},
+	"keywords": [
+		"react",
+		"redux",
+		"skeleton"
+	],
 	"author": "an nguyen",
 	"license": "ISC",
 	"dependencies": {
