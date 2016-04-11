@@ -13,5 +13,5 @@ This is the basic skeleton that use to create a new react app with redux and web
 
 ## Getting Started
 ```
-	install
+	npm install
 ```
