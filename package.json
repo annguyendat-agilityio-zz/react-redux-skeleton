@@ -1,16 +1,12 @@
 {
 	"name": "generator-react-redux-skeleton",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "",
 	"main": "index.jsx",
 	"scripts": {
 		"start": "webpack-dev-server --config webpack.dev.config.js --host 0.0.0.0 --port 8000 --hot --no-info --inline --history-api-fallback --output-public-path /",
 		"test": "mocha --compilers js:babel-register --recursive",
 		"test:watch": "npm test -- --watch"
-	},
-	"repository" : { 
-		"type" : "git",
-		"url" : "https://github.com/annguyen-asnet/react-redux-skeleton.git"
 	},
 	"files": [
     "app",
