@@ -1,6 +1,6 @@
 {
 	"name": "generator-react-redux-skeleton",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "This is the basic skeleton that use to create a new react app with redux and webpack",
 	"main": "app/index.jsx",
 	"scripts": {
@@ -8,6 +8,10 @@
 		"test": "mocha --compilers js:babel-register --recursive",
 		"test:watch": "npm test -- --watch"
 	},
+	"repository": {
+    "type": "git",
+    "url": "git://github.com:annguyen-asnet/react-redux-skeleton.git"
+  },
   "engines": {
     "node": ">=5.0 <6",
     "npm": ">=3.3 <4"
