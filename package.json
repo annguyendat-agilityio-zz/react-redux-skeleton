@@ -1,7 +1,7 @@
 {
 	"name": "generator-react-redux-skeleton",
-	"version": "1.1.0",
-	"description": "",
+	"version": "1.1.1",
+	"description": "This is the basic skeleton that use to create a new react app with redux and webpack",
 	"main": "app/index.jsx",
 	"scripts": {
 		"start": "webpack-dev-server --config webpack.dev.config.js --host 0.0.0.0 --port 8000 --hot --no-info --inline --history-api-fallback --output-public-path /",
@@ -12,12 +12,14 @@
     "node": ">=5.0 <6",
     "npm": ">=3.3 <4"
   },
+  "private": false,
 	"keywords": [
 		"react",
 		"redux",
 		"skeleton"
 	],
 	"author": "An Nguyen",
+	"license": "MIT",
 	"dependencies": {
 		"axios": "^0.9.1",
 		"es6-promise": "^3.1.2",
