@@ -1,13 +1,17 @@
 {
 	"name": "generator-react-redux-skeleton",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "",
-	"main": "index.jsx",
 	"scripts": {
 		"start": "webpack-dev-server --config webpack.dev.config.js --host 0.0.0.0 --port 8000 --hot --no-info --inline --history-api-fallback --output-public-path /",
 		"test": "mocha --compilers js:babel-register --recursive",
 		"test:watch": "npm test -- --watch"
 	},
+	"private": true,
+  "engines": {
+    "node": ">=5.0 <6",
+    "npm": ">=3.3 <4"
+  },
 	"files": [
     "app",
     "test"
