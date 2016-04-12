@@ -1,6 +1,6 @@
 {
 	"name": "generator-react-redux-skeleton",
-	"version": "2.0.2",
+	"version": "2.0.5",
 	"description": "This is the basic skeleton that use to create a new react app with redux and webpack",
 	"main": "app/index.jsx",
 	"scripts": {
@@ -18,6 +18,7 @@
   },
   "private": false,
 	"keywords": [
+		"yeoman-generator",
 		"react",
 		"redux",
 		"skeleton"
