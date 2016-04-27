@@ -1,30 +1,25 @@
 {
-	"name": "generator-react-redux-skeleton",
-	"version": "2.0.5",
-	"description": "This is the basic skeleton that use to create a new react app with redux and webpack",
-	"main": "app/index.jsx",
+	"name": "react-redux-skeleton",
+	"version": "2.0.6",
+	"description": "",
+	"main": "index.jsx",
 	"scripts": {
 		"start": "webpack-dev-server --config webpack.dev.config.js --host 0.0.0.0 --port 8000 --hot --no-info --inline --history-api-fallback --output-public-path /",
-		"test": "mocha --compilers js:babel-register --recursive",
+		"test": "mocha --compilers js:babel-register --recursive ./src/js/**/*-spec.js ",
 		"test:watch": "npm test -- --watch"
 	},
-	"repository": {
-    "type": "git",
-    "url": "https://github.com/annguyen-asnet/react-redux-skeleton.git"
-  },
-  "engines": {
-    "node": ">=5.0 <6",
-    "npm": ">=3.3 <4"
-  },
-  "private": false,
+	"repository" : { 
+		"type" : "git",
+		"url" : "https://github.com/annguyen-asnet/react-redux-skeleton.git"
+	},
 	"keywords": [
 		"yeoman-generator",
 		"react",
 		"redux",
 		"skeleton"
 	],
-	"author": "An Nguyen",
-	"license": "MIT",
+	"author": "an nguyen",
+	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.9.1",
 		"es6-promise": "^3.1.2",

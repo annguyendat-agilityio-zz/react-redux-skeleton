@@ -1,19 +1,19 @@
 import expect from 'expect'
 import React from 'react'
 import TestUtils from 'react-addons-test-utils'
-import App from '../../app/js/components/App'
+import { Basic } from './Basic'
 
-describe('App component', () => {
+describe('Basic component', () => {
 
 	function setup(user) {
 
 		let props = {
 			getAction: expect.createSpy(),
-			basic: 'Redux react skeleton'
+			basic: 'Redux react skeleton' 
 		}
 
 		let renderer = TestUtils.createRenderer()
-		renderer.render(<App {...props} />);
+		renderer.render(<Basic {...props} />);
 		let output = renderer.getRenderOutput();
 
 		return {
@@ -21,7 +21,7 @@ describe('App component', () => {
 		}
 	}
 
-	it('should render correctly when user not login', () => {
+	it('should render correctly', () => {
 
 		const { output } = setup();
 

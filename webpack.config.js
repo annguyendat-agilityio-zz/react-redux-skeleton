@@ -3,14 +3,14 @@ var webpack = require('webpack');
 var promise = require('es6-promise').polyfill();
 
 var ROOT_PATH = path.resolve(__dirname);
-var APP_PATH = path.resolve(ROOT_PATH, 'app');
+var APP_PATH = path.resolve(ROOT_PATH, 'src');
 var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 
 module.exports = {
 	entry: [
 		'webpack-dev-server/client?http://0.0.0.0:8000', // WebpackDevServer host and port
 		'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
-		'./app/index.jsx' // Your appʼs entry point
+		'./src/js/app/App.jsx' // Your appʼs entry point
 	],
 	resolve: {
 		extensions: ['', '.js', '.jsx'] // resolve extensions js, jsx

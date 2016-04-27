@@ -2,7 +2,7 @@ import Immutable from 'immutable';
 
 const initialState = Immutable.fromJS({});
 
-const AppReducer = (state = initialState, action) => {
+const BasicReducer = (state = initialState, action) => {
 	switch (action.type) {
 
 		case 'TYPE_ACTION':
@@ -17,4 +17,4 @@ const AppReducer = (state = initialState, action) => {
 	}
 }
 
-export default AppReducer
+export default BasicReducer

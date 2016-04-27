@@ -1,4 +1,4 @@
-import './style/scss/index.scss';
+import '../../style/scss/index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
@@ -13,11 +13,11 @@ import {
 	Provider
 }
 from 'react-redux';
-import Routes from './js/routers/Routes';
-import appStore from './js/stores/AppStore';
+import Routes from './Routes';
+import Store from './Store';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 
-const store = appStore();
+const store = Store();
 
 // Create an enhanced history that syncs navigation events with the store
 const history = syncHistoryWithStore(browserHistory, store)

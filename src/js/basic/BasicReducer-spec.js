@@ -1,17 +1,17 @@
 import expect from 'expect'
 import { fromJS } from 'immutable';
-import AppReducer from '../../app/js/reducers/AppReducer'
+import BasicReducer from './BasicReducer'
 
-describe('AppReducer reducer', () => {
+describe('Basic reducer', () => {
 
 	it('should return the initial state', () => {
 
-		expect(AppReducer(fromJS({}), {})).toEqual(fromJS({}))
+		expect(BasicReducer(fromJS({}), {})).toEqual(fromJS({}))
 	})
 
 	it('Should handle action', () => {
 
-		expect(AppReducer(fromJS({}), {
+		expect(BasicReducer(fromJS({}), {
 			type: 'TYPE_ACTION'
 		})).toEqual(fromJS({
 			basic: 'Redux react skeleton'

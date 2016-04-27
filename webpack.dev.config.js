@@ -30,7 +30,7 @@ module.exports = merge(common, {
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlwebpackPlugin({
 			title: 'react redux',
-			template: './app/template/template_dev.html'
+			template: './src/template/template_dev.html'
 		})
 	]
 });

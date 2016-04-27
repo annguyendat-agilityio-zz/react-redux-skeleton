@@ -4,8 +4,8 @@ import {
 } from 'redux';
 
 import thunk from 'redux-thunk';
-import logger from '../devs/DevTools';
-import rootReducer from '../reducers/RootReducer';
+import logger from './DevTools';
+import Reducer from './Reducer';
 import { routerMiddleware } from 'react-router-redux';
 import { browserHistory } from 'react-router';
 
@@ -13,6 +13,6 @@ import { browserHistory } from 'react-router';
 const enhancer = applyMiddleware(thunk, logger, routerMiddleware(browserHistory));
 
 export default function configureStore(initialState) {
-  return createStore(rootReducer, initialState, enhancer);
+  return createStore(Reducer, initialState, enhancer);
 }
 
